@@ -1,3 +1,11 @@
+.test {
+  border: 1px solid #000;
+}
+.nav-basics {
+  background-color: #F6F6F6;
+  color: #454A59;
+  border-bottom: 2px solid #F1F1F1;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -145,6 +153,9 @@ h5 {
   font-family: 'Russo One', sans-serif;
   color: #23293B;
 }
+h1 {
+  font-size: 4rem;
+}
 h2 {
   font-size: 3.2rem;
 }
@@ -155,9 +166,41 @@ p {
   font-size: 1.6rem;
   line-height: 1.4;
 }
+a {
+  text-decoration: none;
+  color: inherit;
+}
 .container {
   max-width: 800px;
   width: 100%;
+  margin: 0 auto;
+}
+.main-nav {
+  background-color: #F6F6F6;
+  color: #454A59;
+  border-bottom: 2px solid #F1F1F1;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 1% 0 0.75%;
+  height: 100px;
+  text-align: center;
+  font-size: 1.6rem;
+}
+.main-nav h1 {
+  width: 100%;
+}
+.main-nav nav {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 50%;
+  padding: 0 6%;
   margin: 0 auto;
 }
 footer {
@@ -169,6 +212,9 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.home .intro .blue {
+  border-radius: 5px;
 }
 .home .intro h2 {
   padding: 15px;
@@ -211,6 +257,19 @@ footer {
 }
 .home .walk .walk-text p {
   margin-bottom: 26px;
+}
+.home .walk .walk-text .btn {
+  color: white;
+  font-size: 2rem;
+  background-color: #22283A;
+  text-align: center;
+  border-radius: 5px;
+  width: 30%;
+  padding: 2% 0;
+}
+.home .walk .walk-text .btn:hover {
+  background-color: #7886b0;
+  color: #23293B;
 }
 .home .walk .walk-img {
   width: 46%;

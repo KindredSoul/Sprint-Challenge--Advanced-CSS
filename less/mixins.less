@@ -1,1 +1,30 @@
 // Mixins Here
+.test {
+    border: 1px solid #000;
+}
+
+.flex (@direction: row; @align: align-content; @align-how: center) {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: @direction;
+    justify-content: space-between;
+    @align: @align-how;
+}
+
+.nav-basics {
+    background-color: @nav-bg;
+    color: @nav-font;
+    border-bottom: 2px solid @nav-border;
+}
+
+.button (@color: white; @fontSize: 2rem; @bgColor: @btn-bg-color) {
+    color: @color;
+    font-size: @fontSize;
+    background-color: @bgColor;
+    text-align: center;
+    border-radius: 5px;
+    &:hover {
+        background-color: lighten(@btn-bg-color, 40%);
+        color: @ebony-clay;
+    }
+}
